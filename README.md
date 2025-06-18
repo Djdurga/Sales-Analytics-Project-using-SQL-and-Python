@@ -92,10 +92,8 @@ engine = create_engine("mysql+pymysql://username:password@localhost:3306/Sales_A
 Example:
 
 ```python
-engine = create_engine("mysql+pymysql://root:Durga76@localhost:3306/Sales_Analytics")
+engine = create_engine(f'mysql+pymysql://{username}:{password}@{host}:{port}/{database}')
 ```
-
-> ⚠️ Replace `root`, `Durga76`, `localhost`, and `Sales_Analytics` with your actual MySQL username, password, host, and database name.
 
 ---
 
